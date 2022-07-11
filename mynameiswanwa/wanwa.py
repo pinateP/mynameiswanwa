@@ -1,3 +1,5 @@
+import random
+
 class Poonsawat:
 	"""
 	คลาส Poonsawat คือ
@@ -66,6 +68,39 @@ class Poonsawat:
 		'''
 		print(text)
 
+	def dice(self):
+		dice_list = ['⚀','⚁','⚂','⚃','⚄','⚅']
+		first = random.choice(dice_list)
+		second = random.choice(dice_list)
+		total_point = 0
+		if first == '⚀':
+			point1 = 1
+		elif first == '⚁':
+			point1 = 2
+		elif first == '⚂':
+			point1 = 3
+		elif first == '⚃':
+			point1 = 4
+		elif first == '⚄':
+			point1 = 5
+		else: 
+			point1 = 6
+		if second == '⚀':
+			point2 = 1
+		elif second == '⚁':
+			point2 = 2
+		elif second == '⚂':
+			point2 = 3
+		elif second == '⚃':
+			point2 = 4
+		elif second == '⚄':
+			point2 = 5
+		else: 
+			point2 = 6
+		total_point = point1 + point2
+		print('คุณทอยเต๋าได้ : {} {} หรือเท่ากับ {} แต้ม'.format(first,second,total_point))
+
+
 if __name__ == '__main__':
 	poonsawat = Poonsawat()
 	poonsawat.show_name()
@@ -73,3 +108,4 @@ if __name__ == '__main__':
 	poonsawat.show_page()
 	poonsawat.about()
 	poonsawat.show_art()
+	poonsawat.dice()

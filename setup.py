@@ -12,14 +12,14 @@ DESCRIPTION = '\n\n'.join(LOAD_TEXT(_) for _ in [
 setup(
   name = 'mynameiswanwa',      
   packages = ['mynameiswanwa'], 
-  version = '0.0.1', 
+  version = '0.0.3', 
   license='MIT', 
   description = 'Who is Wanwa?',
   long_description=DESCRIPTION,
   author = 'Wanwa Poonsawat',                 
   author_email = 'wanwa.p@gmail.com',     
   url = 'https://github.com/pinateP/',  
-  download_url = 'https://github.com/pinateP',  
+  download_url = 'https://github.com/pinateP/mynameiswanwa',  
   keywords = ['mynameiswanwa', 'pinateP'],
   classifiers=[
     'Development Status :: 3 - Alpha',     
